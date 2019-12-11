@@ -8,7 +8,7 @@ Each data sets contains sonar images of eel and non-eel objects (wood sticks and
 3. wvlt: original images denoised with wavelet transform;
 4. diffwvlt: images processed with both wavelet denoising and differencing.
 
-Sonar settings in the laboratory experiments and the field experiments were included in the Excel file.
+Sonar settings in the laboratory experiments and the field experiments were included in the Excel file sonar_data_description. Field eel images were graded into three tiers based on the sonar image quality. It is recommended to use tier 1&2 eel images for traing and testing CNN models.
 
 Code CNN_lab_data.py trained and tested CNN models using lab data only.
 
