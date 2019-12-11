@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Written by Tim Yin
+Written by Tim Yin and Xiaoqin Zang
 
 Last editted by Xiaoqin Zang on Nov. 8, 2019
 
@@ -47,19 +47,9 @@ for im_path in glob.glob("C:/Users/****/Documents/sonar_camera/coding/sti_diff_w
 #stick_array_short.shape
 stick_array_short = stick_array_short[0::7]
 
-######### read long stick data
-stick_array_long = np.empty((0, 104, 104))
-
-for im_path in glob.glob("C:/Users/****/Documents/sonar_camera/coding/sti_diff_wave_long/*.png"):
-     im = imageio.imread(im_path)
-     stick_array_long = np.append(stick_array_long, [im], axis=0)
-
-#stick_array_long.shape
-stick_array_long = stick_array_long[0::7]
 
 
-
-stick_array = np.concatenate((stick_array_short, stick_array_long), axis=0)
+stick_array = stick_array_short
 eel_size = eel_array.shape[0]
 stick_size = stick_array.shape[0]
 all_array = np.concatenate((eel_array, stick_array), axis=0)
