@@ -1,4 +1,5 @@
 % eel_detection_and_aspect_ratio.m
+% Xiaoqin Zang
 
 % 12/06/2018
 % 1. to detect and cut out the eel/stick
