@@ -1,4 +1,6 @@
 function imageout = wavelet_denoising(imagein,wname,level,thrtimes)
+% Xiaoqin Zang
+
 
 [C,S]      = wavedec2(imagein,level,wname);
 % 2) Obtain denoising (wavelet shrinkage) thresholds. Use the Birge-Massart strategy with a tuning parameter of 3.
