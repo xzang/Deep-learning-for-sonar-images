@@ -13,3 +13,7 @@ Sonar settings in the laboratory experiments and the field experiments were incl
 Code CNN_lab_data.py trained and tested CNN models using lab data only.
 
 Code CNN_field_data.py trained and tested CNN models using field data only.
+
+Matlab scripts processed .aris sonar data and extracted images of eel and non-eel objects.
+
+Note: the .aris data were read using an open source MATLAB script (see https://github.com/nilsolav/ARISreader) (Handegard & Williams, 2008). This toolbox should be downloaded and put in the same directory with above MATLAB scripts.
